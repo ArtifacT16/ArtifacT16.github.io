@@ -1,0 +1,134 @@
+            
+
+/* CSS voor mijn hele website opmaak van de tekst grootte en de kleuren */
+
+
+.NavBar {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+    background: rgb(219, 12, 108);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+  
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: #000;
+    cursor:  pointer;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: lightgrey;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+}
+
+.image{
+    height: 100vh ;
+    
+    transition: 0.5s;
+    display: flex;
+    flex-flow:column ;
+    justify-content: center;
+    align-items:center;
+    background-image: url(https://images6.alphacoders.com/107/1072679.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.image h1{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    
+}
+
+.image p{
+opacity: 0;
+transform: scale(0);
+transition: 0.8s;
+
+font-size: 3rem;
+color: white;
+text-align: center;
+}
+
+.image:hover{
+box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.9) inset;
+}
+
+.image:hover h1{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.image:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.WIT {
+    font-family:sans-serif;
+   color: white;
+   font-size: 18px;
+   margin: 50px
+}
+
+.ROOD {
+    font-family:sans-serif;
+    color:  rgb(219, 12, 108);
+   font-size: 24px;
+   margin: 40px;
+}
+
